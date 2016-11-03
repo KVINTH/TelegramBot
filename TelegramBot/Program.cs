@@ -20,7 +20,7 @@ namespace TelegramBot
     {
         static void Main(string[] args)
         {
-            TelegramBot bot = new TelegramBot();
+            RnnABot bot = new RnnABot();
         }
     }
 }

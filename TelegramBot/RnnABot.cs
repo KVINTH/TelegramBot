@@ -13,7 +13,7 @@ using System.Drawing;
 
 namespace TelegramBot
 {
-    class TelegramBot
+    class RnnABot
     {
         #region Variable Definitions
 
@@ -32,15 +32,17 @@ namespace TelegramBot
         #region Constructor
 
         /// <summary>
-        /// Constructs a new TelegramBot
+        /// Constructs a new RnnABot
         /// </summary>
-        public TelegramBot()
+        public RnnABot()
         {
             // instanciates the bot object
             Bot = new TelegramBotClient(apiKey);
 
             // event handlers
             Bot.OnMessage += BotOnMessageReceived;
+            //Bot.OnMessage += BotOnPictureMessageReceived;
+
             Bot.OnReceiveError += BotOnReceiveError;
 
             // Gets the bot information from telegram
@@ -49,24 +51,14 @@ namespace TelegramBot
             // Sets the console title to bot username
             Console.Title = me.Username;
 
-            Console.WriteLine("**************************************************");
-            Console.WriteLine("* BOT IS OPERATIONAL                             *");
-            Console.WriteLine("**************************************************");
-            Console.WriteLine("* Bot Name: " + Console.Title);
-            Console.WriteLine("* Bot Identifier: " + me.Id);
-            Console.WriteLine("**************************************************");
-            Console.WriteLine();
-            Console.WriteLine("Messages passed to the bot will be displayed in the following format:");
-            Console.WriteLine("<{0} {1}> {2} ({3}): {4}", "date", "time", "userName", "fullName", "message");
-            Console.WriteLine();
+            Console.WriteLine(Console.Title + " is running.");
 
             // get quotes from file
             loadQuotes();
 
             Bot.StartReceiving();
-
-            string input = Console.ReadLine();
-            Bot.StopReceiving(); 
+            Console.ReadLine();
+            Bot.StopReceiving();
 
         }
 
@@ -97,19 +89,6 @@ namespace TelegramBot
             // returns if it was null or if it was not a text message
             if (message == null || message.Type != MessageType.TextMessage) return;
 
-            string userName = message.From.Username;
-            string fullName = message.From.FirstName + " " + message.From.LastName;
-            string date = DateTime.Now.ToShortDateString();
-            string time = DateTime.Now.ToShortTimeString();
-
-            Console.WriteLine("<{0} {1}> {2} ({3}): {4}", date, time, userName, fullName.Trim(), message.Text);
-
-            using (System.IO.StreamWriter file =
-                    new System.IO.StreamWriter("log.txt", true))
-            {
-                file.WriteLine("<{0} {1}> {2} ({3}): {4}", date, time, userName, fullName.Trim(), message.Text);
-            }
-
             /***********************
              * COMMANDS BEGIN HERE *
              ***********************/
@@ -117,7 +96,7 @@ namespace TelegramBot
             {
                 photoCommand(e);
             }
-            else if (message.Text.StartsWith("/addquote@TelegramBot")) // add a quote
+            else if (message.Text.StartsWith("/addquote@RnnABot")) // add a quote
             {
                 addQuoteRnnACommand(e);
             }
@@ -192,7 +171,7 @@ namespace TelegramBot
         }
 
         /// <summary>
-        /// Controls what occurs when the addquote@TelegramBot command is entered
+        /// Controls what occurs when the addquote@RnnABot command is entered
         /// </summary>
         /// <param name="e"></param>
         async void addQuoteRnnACommand(MessageEventArgs e)
@@ -215,7 +194,7 @@ namespace TelegramBot
             }
             else
             {
-                await Bot.SendTextMessageAsync(message.Chat.Id, "Syntax is /addquote@TelegramBot \"Your Quote\" - Author");
+                await Bot.SendTextMessageAsync(message.Chat.Id, "Syntax is /addquote@RnnABot \"Your Quote\" - Author");
             }
         }
 

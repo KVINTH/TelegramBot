@@ -19,24 +19,3 @@ c:\users\harjot\documents\visual studio 2015\Projects\TelegramBot\TelegramBot\bi
 c:\users\harjot\documents\visual studio 2015\Projects\TelegramBot\TelegramBot\bin\Debug\images\vicky2.jpg
 c:\users\harjot\documents\visual studio 2015\Projects\TelegramBot\TelegramBot\bin\Debug\images\parb2.jpg
 c:\users\harjot\documents\visual studio 2015\Projects\TelegramBot\TelegramBot\bin\Debug\images\MonaLisa_KeithUrban.jpeg
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\TelegramBot.exe.config
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\obj\Debug\TelegramBot.exe
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\obj\Debug\TelegramBot.pdb
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\images\vicky1.jpg
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\images\1.jpg
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\images\happy1.jpg
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\images\harry1.jpg
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\images\keron1.jpg
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\images\parb1.jpg
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\images\vicky2.jpg
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\images\MonaLisa_KeithUrban.jpeg
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\images\parb2.jpg
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\TelegramBot.exe
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\TelegramBot.pdb
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\System.Net.Http.Formatting.dll
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\Telegram.Bot.dll
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\System.Net.Http.Formatting.xml
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\bin\Debug\Telegram.Bot.xml
-C:\Users\Harjot\Documents\GitHub\TelegramBot\TelegramBot\obj\Debug\TelegramBot.csprojResolveAssemblyReference.cache

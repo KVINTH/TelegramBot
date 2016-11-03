@@ -7,3 +7,5 @@ TelegramBot/bin/Debug/images/parb2.jpg
 *.jpg
 TelegramBot/bin/Debug/quotes.txt
 TelegramBot/bin/Debug/telegram_api_key.txt
+TelegramBot/bin/Release/log.txt
+*.txt
